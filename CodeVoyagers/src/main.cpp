@@ -2,8 +2,11 @@
 #include "menus.h"
 #include "philosopher.h"
 
+int selectedPhilosopher1 = -1;
+int selectedPhilosopher2 = -1;
+
 int main() {
-    InitWindow(800, 600, "Philosophy Comparison Tool");
+    InitWindow(1280, 720, "Philosophy Comparison Tool");
 
     SetTargetFPS(60);
 
@@ -19,14 +22,17 @@ int main() {
             if (IsKeyPressed(KEY_ESCAPE)) break;
         }
         else if (currentScreen == 1) {
-            DrawPhilosopherSelection();
+            DrawPhilosopherSelection(&selectedPhilosopher1, &selectedPhilosopher2);
             if (IsKeyPressed(KEY_BACKSPACE)) currentScreen = 0;
-            if (IsKeyPressed(KEY_ONE)) currentScreen = 2;
-            if (IsKeyPressed(KEY_TWO)) currentScreen = 2;
+            if (selectedPhilosopher1 != -1 && selectedPhilosopher2 != -1) currentScreen = 2;
         }
         else if (currentScreen == 2) {
-            DrawPhilosopherComparison();
-            if (IsKeyPressed(KEY_BACKSPACE)) currentScreen = 1;
+            DrawPhilosopherComparison(selectedPhilosopher1, selectedPhilosopher2);
+            if (IsKeyPressed(KEY_BACKSPACE)) {
+                currentScreen = 1;
+                selectedPhilosopher1 = -1;
+                selectedPhilosopher2 = -1;
+            }
         }
 
         EndDrawing();

@@ -2,6 +2,6 @@
 #define MENUS_H
 
 void DrawMainMenu();
-void DrawPhilosopherSelection();
+void DrawPhilosopherSelection(int* selectedPhilosopher1, int* selectedPhilosopher2);
 
 #endif
