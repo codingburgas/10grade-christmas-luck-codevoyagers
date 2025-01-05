@@ -1,2 +1,19 @@
-﻿  main.cpp
+﻿  philosopher.cpp
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(56,38): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(56,38): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(56,54): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(56,54): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(57,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(57,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(57,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(57,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(64,73): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(79,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(79,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(80,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(80,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(83,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(83,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(76,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\CodeVoyagers\src\philosopher.cpp(77,13): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   CodeVoyagers.vcxproj -> C:\Users\vikto\source\repos\10grade-christmas-luck-codevoyagers\bin\Debug-windows-x86_64\CodeVoyagers\CodeVoyagers.exe

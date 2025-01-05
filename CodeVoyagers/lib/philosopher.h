@@ -1,6 +1,15 @@
 #ifndef PHILOSOPHER_H
 #define PHILOSOPHER_H
 
-void DrawPhilosopherComparison(int philosopher1, int philosopher2);
+#include "raylib.h"
 
-#endif
+extern const char* philosopherNames[];
+extern const char* philosopherTheories[];
+extern Texture2D philosopherImages[6];
+
+void LoadPhilosopherImages();
+void UnloadPhilosopherImages();
+void DrawPhilosopherComparison(int philosopher1, int philosopher2);
+void DrawPhilosopherCards(int* selectedPhilosopher, int chosenPhilosopher);
+
+#endif // PHILOSOPHER_H

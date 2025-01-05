@@ -34,13 +34,27 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "menus.h",
+              "DocumentMoniker": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\lib\\menus.h",
+              "RelativeDocumentMoniker": "CodeVoyagers\\lib\\menus.h",
+              "ToolTip": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\lib\\menus.h",
+              "RelativeToolTip": "CodeVoyagers\\lib\\menus.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-03T20:19:45.427Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "philosopher.cpp",
               "DocumentMoniker": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\src\\philosopher.cpp",
               "RelativeDocumentMoniker": "CodeVoyagers\\src\\philosopher.cpp",
               "ToolTip": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\src\\philosopher.cpp",
               "RelativeToolTip": "CodeVoyagers\\src\\philosopher.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAACsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-03T20:41:35.878Z",
               "EditorCaption": ""
@@ -53,22 +67,9 @@
               "RelativeDocumentMoniker": "CodeVoyagers\\lib\\philosopher.h",
               "ToolTip": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\lib\\philosopher.h",
               "RelativeToolTip": "CodeVoyagers\\lib\\philosopher.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-03T20:18:47.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "menus.h",
-              "DocumentMoniker": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\lib\\menus.h",
-              "RelativeDocumentMoniker": "CodeVoyagers\\lib\\menus.h",
-              "ToolTip": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\lib\\menus.h",
-              "RelativeToolTip": "CodeVoyagers\\lib\\menus.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-03T20:19:45.427Z",
               "EditorCaption": ""
             },
             {
@@ -79,7 +80,7 @@
               "RelativeDocumentMoniker": "CodeVoyagers\\src\\menus.cpp",
               "ToolTip": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\src\\menus.cpp",
               "RelativeToolTip": "CodeVoyagers\\src\\menus.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-03T20:41:42.07Z",
               "EditorCaption": ""
@@ -90,9 +91,9 @@
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\src\\main.cpp",
               "RelativeDocumentMoniker": "CodeVoyagers\\src\\main.cpp",
-              "ToolTip": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\src\\main.cpp*",
-              "RelativeToolTip": "CodeVoyagers\\src\\main.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\vikto\\source\\repos\\10grade-christmas-luck-codevoyagers\\CodeVoyagers\\src\\main.cpp",
+              "RelativeToolTip": "CodeVoyagers\\src\\main.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-15T16:03:25.471Z",
               "EditorCaption": ""
