@@ -11,6 +11,11 @@ Texture2D background; // Add a global background texture
 int main() {
     InitWindow(1600, 900, "Philosophy Comparison Tool");
 
+    // Load and set the window icon
+    Image logo = LoadImage("../assets/logo.png"); // Load the logo image
+    SetWindowIcon(logo); // Set the window icon
+    UnloadImage(logo); // Unload the image after setting it as the icon
+
     SetTargetFPS(60);
 
     // Load philosopher images

@@ -11,12 +11,12 @@ const char* philosopherNames[] = {
 };
 
 const char* philosopherTheories[] = {
-    "Aristotle's Theory:\nVirtue ethics focuses on the development of virtuous character traits.\nHe believed that moral virtue is achieved through habitual practice.\nAccording to Aristotle, living a virtuous life leads to true happiness.",
-    "Socrates' Theory:\nSocratic method involves asking a series of questions\nto stimulate critical thinking and illuminate ideas.\nSocrates believed in seeking knowledge through dialogue and self-examination.",
-    "Plato's Theory:\nTheory of Forms posits that non-material abstract forms\nor ideas are the highest and most fundamental kind of reality.\nPlato believed that the material world is a shadow of the true reality of the Forms.",
-    "Sigmund Freud's Theory:\nPsychoanalysis explores the influence of the unconscious mind\non behavior. He proposed that unresolved conflicts from childhood\nimpact adult personality and behavior.",
-    "Karl Marx's Theory:\nMarxism critiques capitalism and advocates for a classless society.\nHe believed that history is driven by class struggles\nand that the working class should overthrow the ruling class.",
-    "Immanuel Kant's Theory:\nCategorical Imperative is a moral law that is universally binding.\nKant argued that one should act only according to maxims that can be\nuniversally applied, emphasizing duty and moral principles."
+    "Aristotle's Theory:\nVirtue ethics focuses on the \ndevelopment of virtuous character traits.\nHe believed that moral virtue is \nachieved through habitual practice.\nAccording to Aristotle, living a virtuous \nlife leads to true happiness.",
+    "Socrates' Theory:\nSocratic method involves asking a series\nof questions to stimulate critical \nthinking and illuminate ideas.\nSocrates believed in seeking knowledge \nthrough dialogue and self-examination.",
+    "Plato's Theory:\nTheory of Forms posits that non-material \nabstract forms or ideas are the highest \nand most fundamental kind of reality.\nPlato believed that the material \nworld is a shadow of the true reality of the Forms.",
+    "Sigmund Freud's Theory:\nPsychoanalysis explores the \ninfluence of the unconscious mind on behavior. \nHe proposed that unresolved \nconflicts from childhood impact \nadult personality and behavior.",
+    "Karl Marx's Theory:\nMarxism critiques capitalism and \nadvocates for a classless society. He believed \nthat history is driven by class struggles\nand that the working class should \noverthrow the ruling class.",
+    "Immanuel Kant's Theory:\nCategorical Imperative is a moral law \nthat is universally binding. Kant argued \nthat one should act only according to maxims \nthat can be universally applied, \nemphasizing duty and moral principles."
 };
 
 Texture2D philosopherImages[6];
@@ -37,23 +37,66 @@ void UnloadPhilosopherImages() {
 }
 
 void DrawPhilosopherComparison(int philosopher1, int philosopher2) {
-    DrawText(TextFormat("%s vs %s", philosopherNames[philosopher1], philosopherNames[philosopher2]), 400, 500, 20, BLACK);
+    const char* comparisonText = TextFormat("%s vs %s", philosopherNames[philosopher1], philosopherNames[philosopher2]);
+    int comparisonTextWidth = MeasureText(comparisonText, 20);
+
+    // Draw background rectangle for comparison text
+    DrawRectangle(680 - 10, 390 - 10, comparisonTextWidth + 20, 40, LIGHTGRAY);
+
+    // Draw comparison text
+    DrawText(comparisonText, 680, 390, 20, BLACK);
+
     DrawTexture(philosopherImages[philosopher1], 200, 150, WHITE);
-    DrawText(philosopherTheories[philosopher1], 200, 600, 20, BLACK);
-    DrawTexture(philosopherImages[philosopher2], 600, 150, WHITE);
-    DrawText(philosopherTheories[philosopher2], 600, 600, 20, BLACK);
-    DrawText("Press BACKSPACE to go back", 200, 600, 20, BLACK);
+
+    // Draw background rectangle for philosopher 1's theory
+    int text1Width = MeasureText(philosopherTheories[philosopher1], 20);
+    DrawRectangle(200 - 10, 520 - 10, text1Width + 20, 5 * 36 + 36, LIGHTGRAY); // Adjusted for 5 lines
+
+    // Draw philosopher 1's theory
+    DrawText(philosopherTheories[philosopher1], 200, 520, 20, BLACK);
+
+    DrawTexture(philosopherImages[philosopher2], 1000, 150, WHITE);
+
+    // Draw background rectangle for philosopher 2's theory
+    int text2Width = MeasureText(philosopherTheories[philosopher2], 20);
+    DrawRectangle(1000 - 10, 520 - 10, text2Width + 20, 5 * 32 + 32, LIGHTGRAY); // Adjusted for 5 lines
+
+    // Draw philosopher 2's theory
+    DrawText(philosopherTheories[philosopher2], 1000, 520, 20, BLACK);
+
+    // Draw background rectangle for "Press BACKSPACE to go back"
+    const char* backText = "Press BACKSPACE to go back";
+    int backTextWidth = MeasureText(backText, 20);
+    DrawRectangle(680 - 10, 810 - 10, backTextWidth + 20, 40, LIGHTGRAY);
+
+    // Draw "Press BACKSPACE to go back" text
+    DrawText(backText, 680, 815, 20, BLACK);
 }
 
 void DrawPhilosopherCards(int* selectedPhilosopher, int chosenPhilosopher) {
-    for (int i = 0; i < 6; i++) {
+    int screenWidth = 1600;
+    int screenHeight = 900;
+    int cardWidth = 200;
+    int cardHeight = 250;
+    int cardsPerRow = 3;
+    int numCards = 6;
+
+    int horizontalSpacing = (screenWidth - (cardWidth * cardsPerRow)) / (cardsPerRow + 1);
+    int verticalSpacing = (screenHeight - (cardHeight * (numCards / cardsPerRow))) / (numCards / cardsPerRow + 1);
+
+    for (int i = 0; i < numCards; i++) {
         if (i == chosenPhilosopher) continue; // Skip the already chosen philosopher
 
-        int row = i / 3;
-        int col = i % 3;
+        int row = i / cardsPerRow;
+        int col = i % cardsPerRow;
 
         // Define card position and size
-        Rectangle card = { 300 * col + 50, 300 * row + 100, 200, 250 };
+        Rectangle card = {
+            horizontalSpacing * (col + 1) + cardWidth * col,
+            verticalSpacing * (row + 1) + cardHeight * row,
+            cardWidth,
+            cardHeight
+        };
         DrawRectangle(card.x, card.y, card.width, card.height, LIGHTGRAY);
 
         // Define source and destination rectangles for the image
@@ -61,7 +104,7 @@ void DrawPhilosopherCards(int* selectedPhilosopher, int chosenPhilosopher) {
         Rectangle dest = { card.x + 25, card.y + 25, 150, 150 }; // Adjust the size and position of the image
 
         // Draw the image within the card
-        DrawTexturePro(philosopherImages[i], source, dest, (Vector2) ( 0, 0 ), 0.0f, WHITE);
+        DrawTexturePro(philosopherImages[i], source, dest, (Vector2)(0, 0), 0.0f, WHITE);
 
         // Display the philosopher's name on two lines if it's too long
         const char* name = philosopherNames[i];
