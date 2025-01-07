@@ -10,15 +10,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\menus.cpp" />
-    <ClCompile Include="src\philosopher.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="lib\philosopher.h" />
-    <ClInclude Include="lib\menus.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{70A2B364-5C05-4309-058B-7BBFF1CC0E8C}</ProjectGuid>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -111,6 +102,15 @@
       <Command>IF EXIST "$(SolutionDir)\vendor\raylib\lib\raylib.dll"\ (xcopy /Q /E /Y /I "$(SolutionDir)\vendor\raylib\lib\raylib.dll" "..\bin\Release-windows-x86_64\CodeVoyagers" &gt; nul) ELSE (xcopy /Q /Y /I "$(SolutionDir)\vendor\raylib\lib\raylib.dll" "..\bin\Release-windows-x86_64\CodeVoyagers" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\menus.h" />
+    <ClInclude Include="lib\philosopher.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\menus.cpp" />
+    <ClCompile Include="src\philosopher.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
