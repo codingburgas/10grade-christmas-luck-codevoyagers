@@ -1,5 +1,5 @@
 # CodeVoyagers
-![Logo](assets/logo.png)
+![Logo](CodeVoyagers/assets/logo.png)
 <hr>
 
 ## 📋 Table of contents
