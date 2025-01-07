@@ -23,8 +23,8 @@
 
 ## Documentation <a name="docs"></a>
 
-#### <img src= "https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg" height='40' width='40' alt="word logo"> [Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/mmshavov22_codingburgas_bg/EdKrHMQEFThApsfPr9YwgtABPYlytQ0tgdp8UuR7AKrB3A?e=C66uP3)
-#### <img src= "https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg" height='40' width='40' alt="powerpoint logo"> [Presentation](https://codingburgas-my.sharepoint.com/:p:/g/personal/mmshavov22_codingburgas_bg/Ea2OeURrTJJKhZEKUVQ5yl4BrS8Tmy_2jXZomTSAx3TCcQ?e=LbwFMM)
+#### <img src= "https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg" height='40' width='40' alt="word logo"> [Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/vnmihaylov22_codingburgas_bg/EQrIz5Y7tapMl60JRkr7fcQBMQf8u6usGGgb2ox3he4AVA?e=q6H4gH)
+#### <img src= "https://upload.wikimedia.org/wikipedia/commons/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg" height='40' width='40' alt="powerpoint logo"> [Presentation](https://codingburgas-my.sharepoint.com/:p:/g/personal/vnmihaylov22_codingburgas_bg/EXMvW3_g0ZVDjNU0uLoa-6YBhXyI2A37YQsRpFJ3cCLygw?e=0MAaRR)
 
 ## 💻 Used Technologies <a name="technologies"></a>
 
