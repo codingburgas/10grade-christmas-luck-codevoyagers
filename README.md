@@ -43,7 +43,7 @@
 ## ⚙️ Installation	<a name = "installation"></a>
 ````	
 1. cmd 
-2. git clone https://github.com/codingburgas/2324-space-sprint-project-alpha-2.git
+2. git clone https://github.com/codingburgas/10grade-christmas-luck-codevoyagers.git
 3. start ./vendor/premake/premake5.exe vs2022
 ````
 
